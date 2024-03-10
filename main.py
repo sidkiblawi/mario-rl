@@ -320,7 +320,7 @@ for e in range(episodes):
 
         # Agent performs action
         next_state, reward, done, trunc, info = env.step(action)
-        time.sleep(.01)
+        time.sleep(.05)
 
         # Remember
         mario.cache(state, next_state, action, reward, done)
